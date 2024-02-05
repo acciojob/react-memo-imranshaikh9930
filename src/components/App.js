@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div>
-      <div>
+      <div id="#main">
         <h2>My Todos</h2>
         {todos.map((todo, index) => {
           return <p key={index}>{todo}</p>;
@@ -50,13 +50,13 @@ function App() {
       </div>
       <div>
         <input
-        id="skill-input"
+        id="todo-0"
           type="text"
           value={memoInput}
           onChange={(e) => setMemoInput(e.target.value)}
           placeholder="Type here..."
         />
-        <button onClick={addItem}>Submit</button>
+        <button  id="skill-input" onClick={addItem}>Submit</button>
       </div>
     </div>
   );
