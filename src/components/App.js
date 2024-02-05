@@ -25,17 +25,18 @@ function App(){
 
     return (
 
-        <div className="app">
+        <div className="app" id="main">
              <button onClick={addTodo}>Add Todo</button>
 
 {/* Increment Button */}
-<button onClick={incrementCount}>Increment Count</button>
-<span>{count}</span>
+<button onClick={incrementCount} id="add-todo-btn">Increment Count</button>
+<span id="incr-cnt">{count}</span>
 
 {/* Memo Input and Submit Button */}
 <div>
   <input
     type="text"
+    id="skill-input"
     value={memoInput}
     onChange={(e) => setMemoInput(e.target.value)}
     placeholder="Type here..."
