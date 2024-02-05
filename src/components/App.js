@@ -43,13 +43,14 @@ function App() {
       </div>
       <hr />
       <div>
-        Count: {count}
-        <button onClick={increment}>+</button>
+       <span id="incr-cnt">Count: {count}</span> 
+        <button id="add-todo-btn" onClick={increment}>+</button>
         <h2>Expensive Calculation</h2>
         {calculation}
       </div>
       <div>
         <input
+        id="skill-input"
           type="text"
           value={memoInput}
           onChange={(e) => setMemoInput(e.target.value)}
